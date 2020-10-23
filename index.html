@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- This is the start of the slides -->
+			<section>
+				<h2>
+					Web accessibility</h2>
+
+				<p>
+					Web accessibility means that websites, tools, and technologies are designed and developed so that
+					people with
+					disabilities can use them.
+				</p>
+
+			</section>
+
+			<section>
+				<h2>
+					Why it is important?
+				</h2>
+				<ul>
+					<li>15% of people have a disability that could affect how they browse the web</li>
+					<li>The concept of accessibility doesn’t just apply to people with disabilities – all users will
+						have different needs at
+						different times and in different circumstances.</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Some statistics...</h3>
+
+				<ul>
+
+					<li>4.5% of the global population experience color blindness, 4% suffer from low vision, and 0,6%
+						are completely
+						blind.</li>
+					<li>over 5% of the world’s population has a disabling hearing loss </li>
+					<li>it’s estimated that by 2050 over 900 million people (1 in 10 people) will have a hearing
+						impairment </li>
+				</ul>
+
+			</section>
+			<section>
+				<h2>
+					Disabilities & assistive technologies
+				</h2>
+				<table>
+					<tr>
+						<th>Visual</th>
+						<th>Mobility</th>
+						<th>Hearing</th>
+					</tr>
+					<tr>
+						<td>Screen readers</td>
+						<td>Voice recognition</td>
+						<td>Captions</td>
+					</tr>
+					<tr>
+						<td>Screen Magnifiers</td>
+						<td>Head pointers</td>
+						<td>Visual signs</td>
+					</tr>
+					<tr>
+						<td>Audio descriptions</td>
+						<td>Motion tracking </td>
+						<td>Automatic transcription</td>
+					</tr>
+					<tr>
+						<td>Color contrast</td>
+						<td>Eye tracking</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Audio Signals</td>
+						<td>Single switch entry devices</td>
+						<td></td>
+					</tr>
+
+				</table>
+			</section>
+			<section>
+				<h2>Screen reader</h2>
+				<img src="./examples/assets/screen_reader.jpg" alt="screen_reader">
+			</section>
+			<section>
+				<h2>Screen reader</h2>
+				<img src="./examples/assets/screen_reader2.jpg" alt="screen_reader_braile">
+			</section>
+			<section>
+				<h2>Eye tracking device</h2>
+				<img src="./examples/assets/eye-tracking-device.jpg" alt="woman using eye tracking device">
+			</section>
+			<section>
+				<h2>Common problems
+				</h2>
+
+				<p>
+					<u>Text links in a different font color</u>
+				</p>
+				<p>This sounds okay, until you think about the fact that anyone with colour blindness will struggle with
+					calls to
+					action that are visually conveyed through colour alone.
+				</p>
+			</section>
+			<section>
+				<h2>Link in different color</h2>
+				<img src="./examples/assets/innaccesible_link_colored.png" alt="false_link_colored">
+
+			</section>
+			<section>
+				<h2>Warning in red color</h2>
+				<img src="./examples/assets/false_color_selection.JPG" alt="false_color_selection">
+			</section>
+			<section>
+				<p><strong>Missing or poor alternative text on images</strong>
+				</p>
+				<img src="./examples/assets/Central_Park_New_York.jpg" alt="central_park_in_New York">
+				<p>Bad alt text:
+					<br>
+					<code>alt="Image of a park"</code></p>
+			</section>
+			<section>
+				<h2>Color contrast</h2>
+				<img src="./examples/assets/color_contrast_example_websites.jpg" alt="color contrast examples website">
+			</section>
+			<section>
+				<h2>Image contrast</h2>
+				<img src="./examples/assets/image-contrast.jpg" alt="color_constrast">
+			</section>
+			<section>
+				<p>Inaccessible font-family/font-size</p>
+				<p>Someone
+					with a cognitive impairment like dyslexia might quickly give up on trying to read it.</p>
+				<img src="./examples/assets/accessible_fonts.png" alt="accessible fonts examples">
+			</section>
+			<section>
+				<h2>How can we improve website's accessibility?</h2>
+				<ul>
+					<li>Use semantic html</li>
+					<li>Navigation</li>
+					<li>Use correct Headings</li>
+					<li>Alternative text</li>
+					<li>Proper styles: color contrast, fonts, layout</li>
+				</ul>
+			</section>
+			<!-- This was the last slide -->
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
